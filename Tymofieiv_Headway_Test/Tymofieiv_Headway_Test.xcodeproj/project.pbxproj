@@ -11,6 +11,12 @@
 		2E0BD9852C6907180013D3C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0BD9842C6907180013D3C3 /* ContentView.swift */; };
 		2E0BD9872C6907190013D3C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E0BD9862C6907190013D3C3 /* Assets.xcassets */; };
 		2E0BD98A2C6907190013D3C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E0BD9892C6907190013D3C3 /* Preview Assets.xcassets */; };
+		2E0BD9932C69321D0013D3C3 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0BD9922C69321D0013D3C3 /* Book.swift */; };
+		2E0BD9962C6932690013D3C3 /* BookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0BD9952C6932690013D3C3 /* BookViewModel.swift */; };
+		2E0BD9982C6935070013D3C3 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0BD9972C6935070013D3C3 /* BookDetailView.swift */; };
+		2E0BD99C2C6960120013D3C3 /* file_example_MP3_700KB.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E0BD99B2C6960110013D3C3 /* file_example_MP3_700KB.mp3 */; };
+		2E0BD99E2C6960B10013D3C3 /* AudioPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0BD99D2C6960B10013D3C3 /* AudioPlayerViewModel.swift */; };
+		365C67CCB2EFB98045DE0512 /* Pods_Tymofieiv_Headway_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B17155D496E6D66D332F64 /* Pods_Tymofieiv_Headway_Test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,14 @@
 		2E0BD9842C6907180013D3C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2E0BD9862C6907190013D3C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E0BD9892C6907190013D3C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2E0BD9922C69321D0013D3C3 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		2E0BD9952C6932690013D3C3 /* BookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewModel.swift; sourceTree = "<group>"; };
+		2E0BD9972C6935070013D3C3 /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
+		2E0BD99B2C6960110013D3C3 /* file_example_MP3_700KB.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = file_example_MP3_700KB.mp3; sourceTree = "<group>"; };
+		2E0BD99D2C6960B10013D3C3 /* AudioPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerViewModel.swift; sourceTree = "<group>"; };
+		41B17155D496E6D66D332F64 /* Pods_Tymofieiv_Headway_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tymofieiv_Headway_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		421DA0B1D5526A3788D91B80 /* Pods-Tymofieiv_Headway_Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tymofieiv_Headway_Test.release.xcconfig"; path = "Target Support Files/Pods-Tymofieiv_Headway_Test/Pods-Tymofieiv_Headway_Test.release.xcconfig"; sourceTree = "<group>"; };
+		B91007066DEFD95138EE1E29 /* Pods-Tymofieiv_Headway_Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tymofieiv_Headway_Test.debug.xcconfig"; path = "Target Support Files/Pods-Tymofieiv_Headway_Test/Pods-Tymofieiv_Headway_Test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +40,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				365C67CCB2EFB98045DE0512 /* Pods_Tymofieiv_Headway_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BAC7BDCE7A58B2394228CB0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B91007066DEFD95138EE1E29 /* Pods-Tymofieiv_Headway_Test.debug.xcconfig */,
+				421DA0B1D5526A3788D91B80 /* Pods-Tymofieiv_Headway_Test.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		2E0BD9762C6907180013D3C3 = {
 			isa = PBXGroup;
 			children = (
 				2E0BD9812C6907180013D3C3 /* Tymofieiv_Headway_Test */,
 				2E0BD9802C6907180013D3C3 /* Products */,
+				1BAC7BDCE7A58B2394228CB0 /* Pods */,
+				EA55D346C4065182F3AD005F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,9 +77,12 @@
 		2E0BD9812C6907180013D3C3 /* Tymofieiv_Headway_Test */ = {
 			isa = PBXGroup;
 			children = (
-				2E0BD9822C6907180013D3C3 /* Tymofieiv_Headway_TestApp.swift */,
-				2E0BD9842C6907180013D3C3 /* ContentView.swift */,
+				2E0BD99A2C695F770013D3C3 /* Resources */,
 				2E0BD9862C6907190013D3C3 /* Assets.xcassets */,
+				2E0BD9992C6935660013D3C3 /* App */,
+				2E0BD9942C6932560013D3C3 /* ViewModel */,
+				2E0BD9912C6930D60013D3C3 /* Model */,
+				2E0BD9902C6930C20013D3C3 /* View */,
 				2E0BD9882C6907190013D3C3 /* Preview Content */,
 			);
 			path = Tymofieiv_Headway_Test;
@@ -67,6 +96,56 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		2E0BD9902C6930C20013D3C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2E0BD9972C6935070013D3C3 /* BookDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2E0BD9912C6930D60013D3C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2E0BD9922C69321D0013D3C3 /* Book.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2E0BD9942C6932560013D3C3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2E0BD9952C6932690013D3C3 /* BookViewModel.swift */,
+				2E0BD99D2C6960B10013D3C3 /* AudioPlayerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2E0BD9992C6935660013D3C3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2E0BD9842C6907180013D3C3 /* ContentView.swift */,
+				2E0BD9822C6907180013D3C3 /* Tymofieiv_Headway_TestApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2E0BD99A2C695F770013D3C3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2E0BD99B2C6960110013D3C3 /* file_example_MP3_700KB.mp3 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EA55D346C4065182F3AD005F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41B17155D496E6D66D332F64 /* Pods_Tymofieiv_Headway_Test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E0BD98D2C6907190013D3C3 /* Build configuration list for PBXNativeTarget "Tymofieiv_Headway_Test" */;
 			buildPhases = (
+				78F0A0FE4C4E019533827C4B /* [CP] Check Pods Manifest.lock */,
 				2E0BD97B2C6907180013D3C3 /* Sources */,
 				2E0BD97C2C6907180013D3C3 /* Frameworks */,
 				2E0BD97D2C6907180013D3C3 /* Resources */,
+				AD3B358B15064BEFD10B977C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,17 +208,64 @@
 			files = (
 				2E0BD98A2C6907190013D3C3 /* Preview Assets.xcassets in Resources */,
 				2E0BD9872C6907190013D3C3 /* Assets.xcassets in Resources */,
+				2E0BD99C2C6960120013D3C3 /* file_example_MP3_700KB.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		78F0A0FE4C4E019533827C4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tymofieiv_Headway_Test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD3B358B15064BEFD10B977C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tymofieiv_Headway_Test/Pods-Tymofieiv_Headway_Test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tymofieiv_Headway_Test/Pods-Tymofieiv_Headway_Test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tymofieiv_Headway_Test/Pods-Tymofieiv_Headway_Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2E0BD97B2C6907180013D3C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E0BD9932C69321D0013D3C3 /* Book.swift in Sources */,
+				2E0BD9962C6932690013D3C3 /* BookViewModel.swift in Sources */,
+				2E0BD9982C6935070013D3C3 /* BookDetailView.swift in Sources */,
 				2E0BD9852C6907180013D3C3 /* ContentView.swift in Sources */,
+				2E0BD99E2C6960B10013D3C3 /* AudioPlayerViewModel.swift in Sources */,
 				2E0BD9832C6907180013D3C3 /* Tymofieiv_Headway_TestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +394,7 @@
 		};
 		2E0BD98E2C6907190013D3C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B91007066DEFD95138EE1E29 /* Pods-Tymofieiv_Headway_Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -274,6 +403,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Tymofieiv_Headway_Test/Preview Content\"";
 				DEVELOPMENT_TEAM = 5KFCCZ48TZ;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -295,6 +425,7 @@
 		};
 		2E0BD98F2C6907190013D3C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 421DA0B1D5526A3788D91B80 /* Pods-Tymofieiv_Headway_Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -303,6 +434,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Tymofieiv_Headway_Test/Preview Content\"";
 				DEVELOPMENT_TEAM = 5KFCCZ48TZ;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
