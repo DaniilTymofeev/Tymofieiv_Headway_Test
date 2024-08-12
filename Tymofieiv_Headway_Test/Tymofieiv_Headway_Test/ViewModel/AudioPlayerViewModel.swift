@@ -13,7 +13,7 @@ class AudioPlayerViewModel: ObservableObject {
   @Published var isPlaying = false
 
   init() {
-    if let sound = Bundle.main.path(forResource: "file_example_MP3_700KB", ofType: "mp3") {
+    if let sound = Bundle.main.path(forResource: "Atomic_Habits_by_James_Clear", ofType: "mp3") {
       do {
         self.audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound))
       } catch {
@@ -31,6 +31,7 @@ class AudioPlayerViewModel: ObservableObject {
       player.pause()
       isPlaying = false
     } else {
+        player.currentTime = 66
       player.play()
       isPlaying = true
     }

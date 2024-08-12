@@ -14,8 +14,11 @@
 		2E0BD9932C69321D0013D3C3 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0BD9922C69321D0013D3C3 /* Book.swift */; };
 		2E0BD9962C6932690013D3C3 /* BookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0BD9952C6932690013D3C3 /* BookViewModel.swift */; };
 		2E0BD9982C6935070013D3C3 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0BD9972C6935070013D3C3 /* BookDetailView.swift */; };
-		2E0BD99C2C6960120013D3C3 /* file_example_MP3_700KB.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E0BD99B2C6960110013D3C3 /* file_example_MP3_700KB.mp3 */; };
 		2E0BD99E2C6960B10013D3C3 /* AudioPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0BD99D2C6960B10013D3C3 /* AudioPlayerViewModel.swift */; };
+		2E29AA042C6A943400F8CBF9 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E29AA032C6A943400F8CBF9 /* Utils.swift */; };
+		2E29AA062C6A9C5000F8CBF9 /* Atomic_Habits_audio_summary.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E29AA052C6A9C5000F8CBF9 /* Atomic_Habits_audio_summary.mp3 */; };
+		2E29AA082C6AB15A00F8CBF9 /* Atomic_Habits_cover.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2E29AA072C6AB15A00F8CBF9 /* Atomic_Habits_cover.jpeg */; };
+		2E29AA0A2C6AB5E200F8CBF9 /* PlaybackSpeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E29AA092C6AB5E200F8CBF9 /* PlaybackSpeed.swift */; };
 		365C67CCB2EFB98045DE0512 /* Pods_Tymofieiv_Headway_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B17155D496E6D66D332F64 /* Pods_Tymofieiv_Headway_Test.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,8 +31,11 @@
 		2E0BD9922C69321D0013D3C3 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		2E0BD9952C6932690013D3C3 /* BookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewModel.swift; sourceTree = "<group>"; };
 		2E0BD9972C6935070013D3C3 /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
-		2E0BD99B2C6960110013D3C3 /* file_example_MP3_700KB.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = file_example_MP3_700KB.mp3; sourceTree = "<group>"; };
 		2E0BD99D2C6960B10013D3C3 /* AudioPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerViewModel.swift; sourceTree = "<group>"; };
+		2E29AA032C6A943400F8CBF9 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		2E29AA052C6A9C5000F8CBF9 /* Atomic_Habits_audio_summary.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Atomic_Habits_audio_summary.mp3; sourceTree = "<group>"; };
+		2E29AA072C6AB15A00F8CBF9 /* Atomic_Habits_cover.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Atomic_Habits_cover.jpeg; sourceTree = "<group>"; };
+		2E29AA092C6AB5E200F8CBF9 /* PlaybackSpeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackSpeed.swift; sourceTree = "<group>"; };
 		41B17155D496E6D66D332F64 /* Pods_Tymofieiv_Headway_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tymofieiv_Headway_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		421DA0B1D5526A3788D91B80 /* Pods-Tymofieiv_Headway_Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tymofieiv_Headway_Test.release.xcconfig"; path = "Target Support Files/Pods-Tymofieiv_Headway_Test/Pods-Tymofieiv_Headway_Test.release.xcconfig"; sourceTree = "<group>"; };
 		B91007066DEFD95138EE1E29 /* Pods-Tymofieiv_Headway_Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tymofieiv_Headway_Test.debug.xcconfig"; path = "Target Support Files/Pods-Tymofieiv_Headway_Test/Pods-Tymofieiv_Headway_Test.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,6 +83,7 @@
 		2E0BD9812C6907180013D3C3 /* Tymofieiv_Headway_Test */ = {
 			isa = PBXGroup;
 			children = (
+				2E29AA022C6A942400F8CBF9 /* Utils */,
 				2E0BD99A2C695F770013D3C3 /* Resources */,
 				2E0BD9862C6907190013D3C3 /* Assets.xcassets */,
 				2E0BD9992C6935660013D3C3 /* App */,
@@ -108,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				2E0BD9922C69321D0013D3C3 /* Book.swift */,
+				2E29AA092C6AB5E200F8CBF9 /* PlaybackSpeed.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -133,9 +141,18 @@
 		2E0BD99A2C695F770013D3C3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2E0BD99B2C6960110013D3C3 /* file_example_MP3_700KB.mp3 */,
+				2E29AA072C6AB15A00F8CBF9 /* Atomic_Habits_cover.jpeg */,
+				2E29AA052C6A9C5000F8CBF9 /* Atomic_Habits_audio_summary.mp3 */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		2E29AA022C6A942400F8CBF9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2E29AA032C6A943400F8CBF9 /* Utils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		EA55D346C4065182F3AD005F /* Frameworks */ = {
@@ -207,8 +224,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E0BD98A2C6907190013D3C3 /* Preview Assets.xcassets in Resources */,
+				2E29AA082C6AB15A00F8CBF9 /* Atomic_Habits_cover.jpeg in Resources */,
 				2E0BD9872C6907190013D3C3 /* Assets.xcassets in Resources */,
-				2E0BD99C2C6960120013D3C3 /* file_example_MP3_700KB.mp3 in Resources */,
+				2E29AA062C6A9C5000F8CBF9 /* Atomic_Habits_audio_summary.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,8 +282,10 @@
 				2E0BD9932C69321D0013D3C3 /* Book.swift in Sources */,
 				2E0BD9962C6932690013D3C3 /* BookViewModel.swift in Sources */,
 				2E0BD9982C6935070013D3C3 /* BookDetailView.swift in Sources */,
+				2E29AA042C6A943400F8CBF9 /* Utils.swift in Sources */,
 				2E0BD9852C6907180013D3C3 /* ContentView.swift in Sources */,
 				2E0BD99E2C6960B10013D3C3 /* AudioPlayerViewModel.swift in Sources */,
+				2E29AA0A2C6AB5E200F8CBF9 /* PlaybackSpeed.swift in Sources */,
 				2E0BD9832C6907180013D3C3 /* Tymofieiv_Headway_TestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
