@@ -15,3 +15,8 @@ enum PlaybackSpeed: String, CaseIterable {
     case x2 = "2x"
     case x0_5 = "0.5x"
 }
+
+enum KeyPointSwitchDirection {
+    case forward
+    case backward
+}

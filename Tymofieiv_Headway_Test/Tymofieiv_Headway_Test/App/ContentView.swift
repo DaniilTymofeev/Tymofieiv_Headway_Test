@@ -5,21 +5,26 @@
 //  Created by Danil Tymofeev on 11.08.2024.
 //
 
+import ComposableArchitecture
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var viewModel = BookViewModel()
+//    @StateObject private var viewModel = BookViewModel()
+//    let store = Store(reducer: appReducer, state: AppState())
+    
     
     var body: some View {
-        NavigationView {
-//            List(viewModel.books) { book in
-//                NavigationLink(destination: BookDetailView()) {
-//                    Text(book.title)
-//                }
+//        NavigationView {
+//            NavigationLink(destination: BookDetailView(
+//                store: Store(initialState: BookDetails.State()) {
+//                    BookDetails()
+//                }))
+//            {
+//                Text("dsdsdsd")
 //            }
-            BookDetailView()
-            .navigationTitle("Book Summaries")
-        }
+//        }
+        
+        SharedAudioPlayerView()
     }
 }
 
