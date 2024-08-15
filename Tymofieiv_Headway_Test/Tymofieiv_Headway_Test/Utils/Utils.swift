@@ -49,3 +49,11 @@ func calculateKeyPointTimeIntervals(book: Book, keyPointIndex: Int, fullDuration
     return startAndEndTimeIntervals
 }
 
+func formatFloatToStringSpeed(_ value: Float) -> String {
+    let formatter = NumberFormatter()
+    formatter.locale = Locale(identifier: "en_US_POSIX")
+    formatter.minimumFractionDigits = 0
+    formatter.maximumFractionDigits = 2
+    
+    return formatter.string(from: NSNumber(value: value)) ?? "\(value)"
+}

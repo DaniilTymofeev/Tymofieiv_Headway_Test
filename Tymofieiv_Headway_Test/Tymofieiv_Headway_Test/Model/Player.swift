@@ -7,13 +7,13 @@
 
 import Foundation
 
-enum PlaybackSpeed: String, CaseIterable {
-    case normal = "1x"
-    case x1_25 = "1.25x"
-    case x1_5 = "1.5x"
-    case x1_75 = "1.75x"
-    case x2 = "2x"
-    case x0_5 = "0.5x"
+enum PlaybackSpeed: Float, CaseIterable {
+    case normal = 1
+    case x1_25 = 1.25
+    case x1_5 = 1.5
+    case x1_75 = 1.75
+    case x2 = 2
+    case x0_5 = 0.5
 }
 
 enum KeyPointSwitchDirection {
