@@ -7,25 +7,43 @@
 
 import ComposableArchitecture
 import SwiftUI
+import AVFAudio
 
 struct ContentView: View {
-//    @StateObject private var viewModel = BookViewModel()
-//    let store = Store(reducer: appReducer, state: AppState())
+    let store: Store = .init(
+        initialState: SharedAudioPlayerReducer.State(
+            avAudioPlayer: Shared.init(
+                wrappedValue: AVAudioPlayer(),
+                .inMemory("audio")
+            ), currentBook: AtomicHabits
+        )
+    ) {
+        SharedAudioPlayerReducer()
+    }
     
     
     var body: some View {
-//        NavigationView {
-//            NavigationLink(destination: BookDetailView(
-//                store: Store(initialState: BookDetails.State()) {
-//                    BookDetails()
-//                }))
-//            {
-//                Text("dsdsdsd")
-//            }
-//        }
-        
-        SharedAudioPlayerView()
+        NavigationStack {
+            NavigationLink(destination: SharedAudioPlayerView(store: store)) {
+                AsyncImage(
+                    url: URL(fileURLWithPath: Bundle.main.path(forResource: "Atomic_Habits_cover", ofType: "jpeg") ?? "ERROR"),
+                    content: { image in
+                        image.resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .scaleEffect(0.5)
+                    },
+                    placeholder: {
+                        ProgressView()
+                    }
+                )
+                .clipShape(RoundedRectangle(cornerRadius: 8))
+                .shadow(color: .gray, radius: 1, x: 5, y: 5)
+            }
+            .frame(width: .infinity, height: .infinity)
+            .background(Color("BackgroundColor", bundle: .main))
+        }
     }
+    
 }
 
 #Preview {

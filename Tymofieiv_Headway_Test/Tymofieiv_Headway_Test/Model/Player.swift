@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import AVFAudio
 
 enum PlaybackSpeed: Float, CaseIterable {
     case normal = 1
@@ -19,4 +20,14 @@ enum PlaybackSpeed: Float, CaseIterable {
 enum KeyPointSwitchDirection {
     case forward
     case backward
+}
+
+extension AVAudioPlayer {
+    var progress: Double {
+        currentTime / duration
+    }
+    
+    var keyPointIsFinished: Bool {
+        currentTime == duration
+    }
 }

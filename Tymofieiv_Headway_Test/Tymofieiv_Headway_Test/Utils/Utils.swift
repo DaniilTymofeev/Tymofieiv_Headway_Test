@@ -16,12 +16,11 @@ func playbackSpeedSwitch(_ currentSpeed: PlaybackSpeed) -> PlaybackSpeed {
     }
 }
 
-func keyPointSwitch(book: Book?, currentKeyPoint: Int, direction: KeyPointSwitchDirection) -> Int {
-    guard let book = book else { return currentKeyPoint }
+func keyPointSwitch(keyPoints: [KeyPoint], currentKeyPoint: Int, direction: KeyPointSwitchDirection) -> Int {
     var newKeyPoint = currentKeyPoint
     switch direction {
     case .forward:
-        if let lastKeyPoint = book.chapters.last?.id, currentKeyPoint < lastKeyPoint {
+        if let lastKeyPoint = keyPoints.last?.id, currentKeyPoint < lastKeyPoint {
             newKeyPoint += 1
         } else {
             newKeyPoint = 0
@@ -35,18 +34,6 @@ func keyPointSwitch(book: Book?, currentKeyPoint: Int, direction: KeyPointSwitch
     }
     
     return newKeyPoint
-}
-
-func calculateKeyPointTimeIntervals(book: Book, keyPointIndex: Int, fullDuration: Int) -> (Int, Int) {
-    var startAndEndTimeIntervals = (0, 0)
-    let currentKeyPoint = book.chapters[keyPointIndex]
-    if let lastChapter = book.chapters.last, currentKeyPoint.id != lastChapter.id {
-        startAndEndTimeIntervals = (currentKeyPoint.startTime, book.chapters[keyPointIndex + 1].startTime)
-    } else {
-        startAndEndTimeIntervals = (currentKeyPoint.startTime, fullDuration)
-    }
-    
-    return startAndEndTimeIntervals
 }
 
 func formatFloatToStringSpeed(_ value: Float) -> String {
