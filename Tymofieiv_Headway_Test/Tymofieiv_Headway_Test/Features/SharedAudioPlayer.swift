@@ -142,7 +142,7 @@ struct SharedAudioPlayerView: View {
         GeometryReader { geo in
             VStack {
                 ZStack {
-                    if isShownTextSummary {
+                    if !isShownTextSummary {
                         AsyncImage(
                             url: URL(fileURLWithPath: Bundle.main.path(forResource: "Atomic_Habits_cover", ofType: "jpeg") ?? "ERROR"),
                             content: { image in
@@ -158,7 +158,7 @@ struct SharedAudioPlayerView: View {
                         .shadow(color: .gray, radius: 1, x: 5, y: 5)
                     } else {
                         ScrollView {
-                            Text(store.currentBook?.summaryText ?? "")
+                            Text(store.currentBook?.keyPoints[store.currentKeyPoint].textSummary ?? "")
                                 .font(.title2)
                                 .fontWeight(.bold)
                                 .lineSpacing(14)
